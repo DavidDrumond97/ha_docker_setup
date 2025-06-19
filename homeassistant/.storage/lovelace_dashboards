@@ -12,6 +12,14 @@
         "require_admin": false,
         "mode": "storage",
         "show_in_sidebar": true
+      },
+      {
+        "id": "dashboard_garden",
+        "show_in_sidebar": true,
+        "title": "Garden",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-garden"
       }
     ]
   }

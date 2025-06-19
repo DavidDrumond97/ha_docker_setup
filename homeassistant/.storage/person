@@ -8,7 +8,9 @@
         "id": "drumond",
         "name": "Drumond",
         "user_id": "bdeafde4425948b3819a686992cc1bd6",
-        "device_trackers": []
+        "device_trackers": [
+          "device_tracker.iphone"
+        ]
       }
     ]
   }

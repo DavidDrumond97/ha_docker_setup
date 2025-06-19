@@ -81,9 +81,26 @@
         "access_token_expiration": 1800.0,
         "token": "a7e42b8d543e234dd32466f7f3fd14d7f7e04fc360e21d2270a1620d60bc161500d39a6a021f1b826b0e8e83d097c82f33100de9bcb53b38834ec72021ba0d23",
         "jwt_key": "808a1d5eeb06bc12dc9f38f01c3a79397d00de6789347c200a19a1b9d4a6d111b72322b368631789221e627486409e5ff9ad6e6e21264b5521db3397625e32ab",
-        "last_used_at": "2025-06-19T16:06:33.319728+00:00",
+        "last_used_at": "2025-06-19T18:55:27.815827+00:00",
         "last_used_ip": "192.168.0.103",
-        "expire_at": 1758125193.319728,
+        "expire_at": 1758135327.815827,
+        "credential_id": "2fb0113bec9942899736a22fac0af8a7",
+        "version": "2025.6.1"
+      },
+      {
+        "id": "2cd5ab50749d4e80a9abd2a35537fc27",
+        "user_id": "bdeafde4425948b3819a686992cc1bd6",
+        "client_id": "https://home-assistant.io/iOS",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2025-06-19T16:38:20.290656+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "8bfdca90f038a56f4e6bf03a1561cb115e18df09da661ecbe74ab71859db655101c11751ba058db66971c28b60d595952c6300eb5530066a499749daaa4c5a15",
+        "jwt_key": "78a3bd17506623a40097e41c335e6ae5f56621168b730166ce8b14e5fe25c613f370a7aae57d519c9bcd48d556e72dade0e085b9a0d1949a9f8f4d1d393dd057",
+        "last_used_at": "2025-06-19T18:53:54.627780+00:00",
+        "last_used_ip": "192.168.0.100",
+        "expire_at": 1758135234.62778,
         "credential_id": "2fb0113bec9942899736a22fac0af8a7",
         "version": "2025.6.1"
       }
