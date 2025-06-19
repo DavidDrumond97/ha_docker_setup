@@ -1,0 +1,166 @@
+[2025-06-18 23:52:45] info: 	z2m: Logging to console, file (filename: log.log)
+[2025-06-18 23:52:45] debug: 	z2m: Can't load state from file /app/data/state.json (doesn't exist)
+[2025-06-18 23:52:45] info: 	z2m: Starting Zigbee2MQTT version 2.4.0 (commit #bdb94da46e0461337f4a61b4f2a6bfa5172f608f
+)
+[2025-06-18 23:52:45] info: 	z2m: Starting zigbee-herdsman (4.1.0)
+[2025-06-18 23:52:45] debug: 	z2m: Using zigbee-herdsman with settings: '"{\"network\":{\"panID\":10998,\"extendedPanID\":[136,40,51,126,199,134,107,110],\"channelList\":[11],\"networkKey\":\"HIDDEN\"},\"databasePath\":\"/app/data/database.db\",\"databaseBackupPath\":\"/app/data/database.db.backup\",\"backupPath\":\"/app/data/coordinator_backup.json\",\"serialPort\":{\"baudRate\":115200,\"rtscts\":false,\"path\":\"/dev/ttyUSB0\",\"adapter\":\"ember\"},\"adapter\":{\"disableLED\":false}}"'
+[2025-06-18 23:52:45] debug: 	zh:adapter:discovery: Connected devices: [{"path":"/dev/ttyS0"},{"path":"/dev/ttyS1"},{"path":"/dev/ttyS10"},{"path":"/dev/ttyS11"},{"path":"/dev/ttyS12"},{"path":"/dev/ttyS13"},{"path":"/dev/ttyS14"},{"path":"/dev/ttyS15"},{"path":"/dev/ttyS16"},{"path":"/dev/ttyS17"},{"path":"/dev/ttyS18"},{"path":"/dev/ttyS19"},{"path":"/dev/ttyS2"},{"path":"/dev/ttyS20"},{"path":"/dev/ttyS21"},{"path":"/dev/ttyS22"},{"path":"/dev/ttyS23"},{"path":"/dev/ttyS24"},{"path":"/dev/ttyS25"},{"path":"/dev/ttyS26"},{"path":"/dev/ttyS27"},{"path":"/dev/ttyS28"},{"path":"/dev/ttyS29"},{"path":"/dev/ttyS3"},{"path":"/dev/ttyS30"},{"path":"/dev/ttyS31"},{"path":"/dev/ttyS4"},{"path":"/dev/ttyS5"},{"path":"/dev/ttyS6"},{"path":"/dev/ttyS7"},{"path":"/dev/ttyS8"},{"path":"/dev/ttyS9"},{"path":"/dev/ttyUSB0","manufacturer":"Itead","serialNumber":"500f99b90b74ef11b886e71e313510fd","pnpId":"usb-Itead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_V2_500f99b90b74ef11b886e71e313510fd-if00-port0","vendorId":"10c4","productId":"ea60"}]
+[2025-06-18 23:52:45] info: 	zh:adapter:discovery: Matched adapter: {"path":"/dev/ttyUSB0","manufacturer":"Itead","serialNumber":"500f99b90b74ef11b886e71e313510fd","pnpId":"usb-Itead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_V2_500f99b90b74ef11b886e71e313510fd-if00-port0","vendorId":"10c4","productId":"ea60"} => ember: 4
+[2025-06-18 23:52:45] info: 	zh:ember: Using default stack config.
+[2025-06-18 23:52:45] debug: 	zh:controller: Starting with options '{"network":{"networkKeyDistribute":false,"networkKey":"HIDDEN","panID":10998,"extendedPanID":[136,40,51,126,199,134,107,110],"channelList":[11]},"serialPort":{"baudRate":115200,"rtscts":false,"path":"/dev/ttyUSB0","adapter":"ember"},"adapter":{"disableLED":false},"databasePath":"/app/data/database.db","databaseBackupPath":"/app/data/database.db.backup","backupPath":"/app/data/coordinator_backup.json"}'
+[2025-06-18 23:52:45] info: 	zh:ember: ======== Ember Adapter Starting ========
+[2025-06-18 23:52:45] info: 	zh:ember:ezsp: ======== EZSP starting ========
+[2025-06-18 23:52:45] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2025-06-18 23:52:45] info: 	zh:ember:uart:ash: RTS/CTS config is off, enabling software flow control.
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Opening serial port with {"path":"/dev/ttyUSB0","baudRate":115200,"rtscts":false,"autoOpen":false,"parity":"none","stopBits":1,"xon":true,"xoff":true}
+[2025-06-18 23:52:45] info: 	zh:ember:uart:ash: Serial port opened
+[2025-06-18 23:52:45] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: ---> [FRAME type=RST]
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 0/2500
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 100/2500
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 200/2500
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 300/2500
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 400/2500
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 500/2500
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 600/2500
+[2025-06-18 23:52:45] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 700/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 800/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 900/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1000/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1100/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1200/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1300/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1400/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1500/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1600/2500
+[2025-06-18 23:52:46] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1700/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1800/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1900/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2000/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2100/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2200/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2300/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2400/2500
+[2025-06-18 23:52:47] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2025-06-18 23:52:47] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: ---> [FRAME type=RST]
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 0/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 100/2500
+[2025-06-18 23:52:47] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 200/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 300/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 400/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 500/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 600/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 700/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 800/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 900/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1000/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1100/2500
+[2025-06-18 23:52:48] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1200/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1300/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1400/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1500/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1600/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1700/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1800/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1900/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2000/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2100/2500
+[2025-06-18 23:52:49] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2200/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2300/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2400/2500
+[2025-06-18 23:52:50] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2025-06-18 23:52:50] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: ---> [FRAME type=RST]
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 0/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 100/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 200/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 300/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 400/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 500/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 600/2500
+[2025-06-18 23:52:50] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 700/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 800/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 900/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1000/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1100/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1200/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1300/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1400/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1500/2500
+[2025-06-18 23:52:51] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1600/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1700/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1800/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1900/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2000/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2100/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2200/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2300/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2400/2500
+[2025-06-18 23:52:52] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2025-06-18 23:52:52] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: ---> [FRAME type=RST]
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 0/2500
+[2025-06-18 23:52:52] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 100/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 200/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 300/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 400/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 500/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 600/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 700/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 800/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 900/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1000/2500
+[2025-06-18 23:52:53] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1100/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1200/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1300/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1400/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1500/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1600/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1700/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1800/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1900/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2000/2500
+[2025-06-18 23:52:54] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2100/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2200/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2300/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2400/2500
+[2025-06-18 23:52:55] info: 	zh:ember:uart:ash: ======== ASH Adapter reset ========
+[2025-06-18 23:52:55] info: 	zh:ember:uart:ash: ======== ASH starting ========
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: ---> [FRAME type=RST]
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 0/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 100/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 200/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 300/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 400/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 500/2500
+[2025-06-18 23:52:55] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 600/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 700/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 800/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 900/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1000/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1100/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1200/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1300/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1400/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1500/2500
+[2025-06-18 23:52:56] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1600/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1700/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1800/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 1900/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2000/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2100/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2200/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2300/2500
+[2025-06-18 23:52:57] debug: 	zh:ember:uart:ash: Waiting for RSTACK... 2400/2500
+[2025-06-18 23:52:57] error: 	z2m: Error while starting zigbee-herdsman
+[2025-06-18 23:52:57] error: 	z2m: Failed to start zigbee-herdsman
+[2025-06-18 23:52:57] error: 	z2m: Check https://www.zigbee2mqtt.io/guide/installation/20_zigbee2mqtt-fails-to-start_crashes-runtime.html for possible solutions
+[2025-06-18 23:52:57] error: 	z2m: Exiting...
+[2025-06-18 23:52:57] error: 	z2m: Error: Failed to start EZSP layer with status=HOST_FATAL_ERROR.
+    at EmberAdapter.initEzsp (/app/node_modules/.pnpm/zigbee-herdsman@4.1.0/node_modules/zigbee-herdsman/src/adapter/ember/adapter/emberAdapter.ts:666:19)
+    at EmberAdapter.start (/app/node_modules/.pnpm/zigbee-herdsman@4.1.0/node_modules/zigbee-herdsman/src/adapter/ember/adapter/emberAdapter.ts:1548:24)
+    at Controller.start (/app/node_modules/.pnpm/zigbee-herdsman@4.1.0/node_modules/zigbee-herdsman/src/controller/controller.ts:133:29)
+    at Zigbee.start (/app/lib/zigbee.ts:71:27)
+    at Controller.start (/app/lib/controller.ts:102:13)
+    at start (/app/index.js:149:5)
