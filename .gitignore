@@ -1,2 +1,30 @@
+# Zigbee2MQTT data
+data/database.db
+data/state.json
+data/coordinator_backup.json
+data/log/
+!data/configuration.yaml
+
+# Home Assistant database and secrets
+homeassistant/home-assistant_v2.db*
+homeassistant/home-assistant.log*
+homeassistant/home-assistant.log.fault
+homeassistant/secrets.yaml
+homeassistant/.storage/
+homeassistant/.HA_VERSION
+
+# Additional Home Assistant config paths
+ha-config/home-assistant_v2.db*
+ha-config/home-assistant.log*
+ha-config/zigbee.db*
 ha-config/.storage/
+
+# Mosquitto persistence data
+mosquitto/data/
+
+# Config folders (if duplicated)
 config/.storage/
+
+# Temporary or system folders
+Logs/
+System/

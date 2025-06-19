@@ -42,6 +42,19 @@
         "temperature_entity_id": null,
         "created_at": "2025-06-19T15:35:50.532262+00:00",
         "modified_at": "2025-06-19T15:35:50.532263+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "___ADD_NEW___",
+        "humidity_entity_id": null,
+        "icon": "mdi:flower-outline",
+        "id": "front_garden",
+        "labels": [],
+        "name": "Front Garden",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-06-19T16:02:59.630788+00:00",
+        "modified_at": "2025-06-19T16:02:59.630798+00:00"
       }
     ]
   }

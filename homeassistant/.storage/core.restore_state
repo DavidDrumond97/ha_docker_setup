@@ -4,9 +4,100 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-06-19T15:32:33.665266+00:00","last_reported":"2025-06-19T15:32:33.665266+00:00","last_updated":"2025-06-19T15:32:33.665266+00:00","context":{"id":"01JY4D4081NM2VAGV485SWDHVB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-06-19T15:59:34.710108+00:00","last_reported":"2025-06-19T15:59:34.710108+00:00","last_updated":"2025-06-19T15:59:34.710108+00:00","context":{"id":"01JY4ENF9PDCCP700957XMYZ17","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-06-19T15:32:34.451047+00:00"
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatic backup"},"last_changed":"2025-06-19T15:59:34.762521+00:00","last_reported":"2025-06-19T15:59:34.762521+00:00","last_updated":"2025-06-19T15:59:34.762521+00:00","context":{"id":"01JY4ENFBA342QBT45ZG5SJVCW","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "last_event_type": null,
+        "last_event_attributes": null
+      },
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"person.drumond","state":"unknown","attributes":{"editable":true,"id":"drumond","device_trackers":[],"user_id":"bdeafde4425948b3819a686992cc1bd6","friendly_name":"Drumond"},"last_changed":"2025-06-19T15:59:34.922036+00:00","last_reported":"2025-06-19T15:59:35.335563+00:00","last_updated":"2025-06-19T15:59:35.335563+00:00","context":{"id":"01JY4ENFX736RPNA4EM68EJBVW","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-06-19T15:59:35.186021+00:00","last_reported":"2025-06-19T15:59:35.186021+00:00","last_updated":"2025-06-19T15:59:35.186021+00:00","context":{"id":"01JY4ENFRJBBNHE95B9SA7AYYR","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.zigbee2mqtt_bridge_connection_state","state":"on","attributes":{"device_class":"connectivity","friendly_name":"Zigbee2MQTT Bridge Connection state"},"last_changed":"2025-06-19T16:01:50.111619+00:00","last_reported":"2025-06-19T16:01:50.111619+00:00","last_updated":"2025-06-19T16:01:50.111619+00:00","context":{"id":"01JY4ESKGZ1YAAAP23G9NJSJP8","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"button.zigbee2mqtt_bridge_restart","state":"unknown","attributes":{"device_class":"restart","friendly_name":"Zigbee2MQTT Bridge Restart"},"last_changed":"2025-06-19T16:01:50.110672+00:00","last_reported":"2025-06-19T16:01:50.110672+00:00","last_updated":"2025-06-19T16:01:50.110672+00:00","context":{"id":"01JY4ESKGYBAMKZT4WWC1C4JAQ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"select.zigbee2mqtt_bridge_log_level","state":"info","attributes":{"options":["error","warning","info","debug"],"friendly_name":"Zigbee2MQTT Bridge Log level"},"last_changed":"2025-06-19T16:01:50.117064+00:00","last_reported":"2025-06-19T16:01:50.117064+00:00","last_updated":"2025-06-19T16:01:50.117064+00:00","context":{"id":"01JY4ESKH5MH9VPTV06MHC7S3B","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"select.front_device_power_on_behavior_l1","state":"off","attributes":{"options":["off","previous","on"],"icon":"mdi:power-settings","friendly_name":"Front device Power-on behavior l1"},"last_changed":"2025-06-19T16:02:25.119931+00:00","last_reported":"2025-06-19T16:02:25.119931+00:00","last_updated":"2025-06-19T16:02:25.119931+00:00","context":{"id":"01JY4ETNPZZB84Y3C7QMQW8HRQ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"select.front_device_power_on_behavior_l2","state":"off","attributes":{"options":["off","previous","on"],"icon":"mdi:power-settings","friendly_name":"Front device Power-on behavior l2"},"last_changed":"2025-06-19T16:02:25.120173+00:00","last_reported":"2025-06-19T16:02:25.120173+00:00","last_updated":"2025-06-19T16:02:25.120173+00:00","context":{"id":"01JY4ETNQ068V4D4Y4WCC7JT3M","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.zigbee2mqtt_bridge_version","state":"2.4.0","attributes":{"icon":"mdi:zigbee","friendly_name":"Zigbee2MQTT Bridge Version"},"last_changed":"2025-06-19T16:01:50.117144+00:00","last_reported":"2025-06-19T16:01:50.117144+00:00","last_updated":"2025-06-19T16:01:50.117144+00:00","context":{"id":"01JY4ESKH53TE931TT8SWX49FE","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "2.4.0",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"select.front_device_power_on_behavior_l3","state":"off","attributes":{"options":["off","previous","on"],"icon":"mdi:power-settings","friendly_name":"Front device Power-on behavior l3"},"last_changed":"2025-06-19T16:02:25.120116+00:00","last_reported":"2025-06-19T16:02:25.120116+00:00","last_updated":"2025-06-19T16:02:25.120116+00:00","context":{"id":"01JY4ETNQ0ZH8SC83GF29HFBP7","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"select.front_device_power_on_behavior_l4","state":"off","attributes":{"options":["off","previous","on"],"icon":"mdi:power-settings","friendly_name":"Front device Power-on behavior l4"},"last_changed":"2025-06-19T16:02:25.120087+00:00","last_reported":"2025-06-19T16:02:25.120087+00:00","last_updated":"2025-06-19T16:02:25.120087+00:00","context":{"id":"01JY4ETNQ0TZ8SSR6QJ6PKGXWK","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.zigbee2mqtt_bridge_permit_join","state":"off","attributes":{"icon":"mdi:human-greeting-proximity","friendly_name":"Zigbee2MQTT Bridge Permit join"},"last_changed":"2025-06-19T16:03:29.854523+00:00","last_reported":"2025-06-19T16:03:29.854523+00:00","last_updated":"2025-06-19T16:03:29.854523+00:00","context":{"id":"01JY4EWMP1QAQ712HZ5CYY1W6T","parent_id":null,"user_id":"bdeafde4425948b3819a686992cc1bd6"}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.front_device_l1","state":"off","attributes":{"friendly_name":"Front device L1"},"last_changed":"2025-06-19T16:04:13.903405+00:00","last_reported":"2025-06-19T16:04:13.903405+00:00","last_updated":"2025-06-19T16:04:13.903405+00:00","context":{"id":"01JY4EXZWPTTQDR4YEK5MT0QYM","parent_id":null,"user_id":"bdeafde4425948b3819a686992cc1bd6"}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.front_device_l2","state":"off","attributes":{"friendly_name":"Front device L2"},"last_changed":"2025-06-19T16:04:12.849290+00:00","last_reported":"2025-06-19T16:04:12.849290+00:00","last_updated":"2025-06-19T16:04:12.849290+00:00","context":{"id":"01JY4EXYW5BQBYSQZP068WZXZM","parent_id":null,"user_id":"bdeafde4425948b3819a686992cc1bd6"}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.front_device_l3","state":"off","attributes":{"friendly_name":"Front device L3"},"last_changed":"2025-06-19T16:04:12.036967+00:00","last_reported":"2025-06-19T16:04:12.036967+00:00","last_updated":"2025-06-19T16:04:12.036967+00:00","context":{"id":"01JY4EXY2H7GJN37724G2WPRMT","parent_id":null,"user_id":"bdeafde4425948b3819a686992cc1bd6"}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.front_device_l4","state":"off","attributes":{"friendly_name":"Front device L4"},"last_changed":"2025-06-19T16:04:11.153627+00:00","last_reported":"2025-06-19T16:04:11.153627+00:00","last_updated":"2025-06-19T16:04:11.153627+00:00","context":{"id":"01JY4EXX71PH5ACQ394BDYVAGV","parent_id":null,"user_id":"bdeafde4425948b3819a686992cc1bd6"}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.front_device_backlight_mode","state":"on","attributes":{"friendly_name":"Front device Backlight mode"},"last_changed":"2025-06-19T16:02:25.120001+00:00","last_reported":"2025-06-19T16:02:25.120001+00:00","last_updated":"2025-06-19T16:02:25.120001+00:00","context":{"id":"01JY4ETNQ0CMXQXDJPMRZKBC1P","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-06-19T16:14:35.336332+00:00"
     }
   ]
 }
