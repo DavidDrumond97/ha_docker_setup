@@ -1,0 +1,16 @@
+[2025-06-19 16:20:10] info: 	z2m: Logging to console, file (filename: log.log)
+[2025-06-19 16:20:10] info: 	z2m: Starting Zigbee2MQTT version 2.4.0 (commit #bdb94da46e0461337f4a61b4f2a6bfa5172f608f
+)
+[2025-06-19 16:20:10] info: 	z2m: Starting zigbee-herdsman (4.1.0)
+[2025-06-19 16:20:10] warning: 	zh:ezsp: 'ezsp' driver is deprecated and will only remain to provide support for older firmware (pre 7.4.x). Migration to 'ember' is recommended. If using Zigbee2MQTT see https://github.com/Koenkk/zigbee2mqtt/discussions/21462
+[2025-06-19 16:20:15] info: 	z2m: zigbee-herdsman started (resumed)
+[2025-06-19 16:20:15] info: 	z2m: Coordinator firmware version: '{"meta":{"maintrel":"4 ","majorrel":"7","minorrel":"4","product":13,"revision":"7.4.4.0 build 0"},"type":"EZSP v13"}'
+[2025-06-19 16:20:15] info: 	z2m: 0xa4c1380992beb6e3 (0xa4c1380992beb6e3): TYWB 4ch-RF - MHCOZY 4 channel relay (Router)
+[2025-06-19 16:20:15] info: 	z2m: Currently 1 devices are joined.
+[2025-06-19 16:20:15] info: 	z2m: Connecting to MQTT server at mqtt://mqtt:1883
+[2025-06-19 16:20:15] info: 	z2m: Connected to MQTT server
+[2025-06-19 16:20:15] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/bridge/state', payload '{"state":"online"}'
+[2025-06-19 16:20:15] info: 	z2m: Started frontend on port 0.0.0.0:8080
+[2025-06-19 16:20:15] info: 	z2m:mqtt: MQTT publish: topic 'zigbee2mqtt/0xa4c1380992beb6e3', payload '{"backlight_mode":"ON","linkquality":null,"power_on_behavior_l1":"off","power_on_behavior_l2":"off","power_on_behavior_l3":"off","power_on_behavior_l4":"off","state_l1":"OFF","state_l2":"OFF","state_l3":"OFF","state_l4":"OFF"}'
+[2025-06-19 16:20:15] info: 	z2m: Zigbee2MQTT started!
+[2025-06-19 16:20:20] info: 	z2m:mqtt: MQTT publish: topic 'homeassistant/binary_sensor/1221051039810110150109113116116_0x08b95ffffeda3f70/connection_state/config', payload '{"device":{"hw_version":"EZSP v13 7.4.4.0 build 0","identifiers":["zigbee2mqtt_bridge_0x08b95ffffeda3f70"],"manufacturer":"Zigbee2MQTT","model":"Bridge","name":"Zigbee2MQTT Bridge","sw_version":"2.4.0"},"device_class":"connectivity","entity_category":"diagnostic","name":"Connection state","object_id":"zigbee2mqtt_bridge_connection_state","origin":{"name":"Zigbee2MQTT","sw":"2.4.0","url":"https://www.zigbee2mqtt.io"},"payload_off":"offline","payload_on":"online","state_topic":"zigbee2mqtt/bridge/state","unique_id":"bridge_0x08b95ffffeda3f70_connection_state_zigbee2mqtt","value_template":"{{ value_json.state }}"}'

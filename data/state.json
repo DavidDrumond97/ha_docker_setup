@@ -1,0 +1,13 @@
+{
+    "0xa4c1380992beb6e3": {
+        "state_l1": "OFF",
+        "backlight_mode": "ON",
+        "power_on_behavior_l1": "off",
+        "state_l2": "OFF",
+        "power_on_behavior_l2": "off",
+        "state_l3": "OFF",
+        "power_on_behavior_l3": "off",
+        "state_l4": "OFF",
+        "power_on_behavior_l4": "off"
+    }
+}
