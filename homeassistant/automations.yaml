@@ -17,3 +17,28 @@
     entity_id: f3d558b106ebdef4e210906b96137728
     domain: switch
   mode: single
+- id: '1750515600408'
+  alias: Rega Frontal
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: f610843d38b6e58c77ad91f1878a95e1
+    entity_id: f3d558b106ebdef4e210906b96137728
+    domain: switch
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: f610843d38b6e58c77ad91f1878a95e1
+    entity_id: f3d558b106ebdef4e210906b96137728
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
+  - type: turn_off
+    device_id: f610843d38b6e58c77ad91f1878a95e1
+    entity_id: f3d558b106ebdef4e210906b96137728
+    domain: switch
+  mode: single

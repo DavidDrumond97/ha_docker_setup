@@ -40,3 +40,4 @@ tailscale/state/
 # Temporary or system folders
 Logs/
 System/
+.env

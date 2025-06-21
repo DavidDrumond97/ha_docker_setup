@@ -54,7 +54,7 @@ services:
       - NET_ADMIN
       - SYS_MODULE
     environment:
-      - TS_AUTHKEY=  # Optional: for automatic login
+      - TS_AUTHKEY=${TS_AUTHKEY}
     volumes:
       - ./tailscale/state:/var/lib/tailscale
       - /dev/net/tun:/dev/net/tun

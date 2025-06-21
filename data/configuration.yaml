@@ -14,4 +14,7 @@ frontend:
 version: 4
 devices:
   '0xa4c1380992beb6e3':
-    friendly_name: Front device
+    friendly_name: Jardim Frontal
+advanced:
+  log_level: debug
+  transmit_power: 20
