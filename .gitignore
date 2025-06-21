@@ -1,3 +1,12 @@
+# Ignore all .db and .log files recursively
+*.db
+*.log
+
+# Ignore backup and lock files too
+*.db-shm
+*.db-wal
+*.log.*
+
 # Zigbee2MQTT data
 data/database.db
 data/state.json
@@ -24,6 +33,9 @@ mosquitto/data/
 
 # Config folders (if duplicated)
 config/.storage/
+
+#Tailscale 
+tailscale/state/
 
 # Temporary or system folders
 Logs/
