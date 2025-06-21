@@ -1,6 +1,6 @@
 # Ignore all .db and .log files recursively
-*.db
-*.log
+*.db*
+*.log*
 
 # Ignore backup and lock files too
 *.db-shm
