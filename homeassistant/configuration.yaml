@@ -9,8 +9,3 @@ frontend:
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
-
-lovelace:
-  resources:
-    - url: /local/scheduler-card/scheduler-card.js
-      type: module

@@ -1,2 +1,8 @@
-2025-06-21 12:39:34.472 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration scheduler which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2025-06-21 12:39:35.193 WARNING (MainThread) [homeassistant.components.lovelace] Lovelace is running in storage mode. Define resources via user interface
+2025-06-21 13:13:15.518 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-06-21 13:22:39.533 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [126362301659904] Error handling message: Unknown error (unknown_error) Drumond from 192.168.0.103 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/decorators.py", line 28, in _handle_async_response
+    await func(hass, connection, msg)
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 544, in handle_manifest_list
+    raise int_or_exc
+homeassistant.loader.IntegrationNotFound: Integration 'scheduler' not found.
