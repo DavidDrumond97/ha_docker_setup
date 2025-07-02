@@ -15,6 +15,10 @@ version: 4
 devices:
   '0xa4c1380992beb6e3':
     friendly_name: Jardim Frontal
+  '0xa4c1385a161b4255':
+    friendly_name: '0xa4c1385a161b4255'
 advanced:
   log_level: debug
   transmit_power: 20
+external_converters:
+  - ts0601_vmcgja59.js

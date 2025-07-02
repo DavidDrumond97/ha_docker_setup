@@ -46,18 +46,18 @@ services:
       mqtt:
         condition: service_healthy
 
-  tailscale:
-    build:
-      context: ./tailscale
-    container_name: tailscale
-    cap_add:
-      - NET_ADMIN
-      - SYS_MODULE
-    environment:
-      - TS_AUTHKEY=${TS_AUTHKEY}
-    volumes:
-      - ./tailscale/state:/var/lib/tailscale
-      - /dev/net/tun:/dev/net/tun
-    network_mode: "host"
-    restart: unless-stopped
-    privileged: true
+  ##tailscale:
+  ##  build:
+  ##    context: ./tailscale
+  ##  container_name: tailscale
+  ##  cap_add:
+  ##    - NET_ADMIN
+  ##    - SYS_MODULE
+  ##  environment:
+  ##    - TS_AUTHKEY=${TS_AUTHKEY}
+  ##  volumes:
+  ##    - ./tailscale/state:/var/lib/tailscale
+  ##    - /dev/net/tun:/dev/net/tun
+  ##  network_mode: "host"
+  ##  restart: unless-stopped
+  ##  privileged: true

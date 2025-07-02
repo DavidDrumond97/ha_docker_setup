@@ -34,8 +34,8 @@
     domain: switch
   - delay:
       hours: 0
-      minutes: 0
-      seconds: 5
+      minutes: 2
+      seconds: 10
       milliseconds: 0
   - type: turn_off
     device_id: f610843d38b6e58c77ad91f1878a95e1
