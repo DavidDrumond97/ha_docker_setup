@@ -1,25 +1,24 @@
+
 services:
   mqtt:
-    image: eclipse-mosquitto:2.0
+    image: eclipse-mosquitto
     container_name: mqtt
-    ports:
-      - "1883:1883"
     volumes:
       - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
       - ./mosquitto/log:/mosquitto/log
+    ports:
+      - "1883:1883"
     healthcheck:
       test: ["CMD", "mosquitto_pub", "-h", "localhost", "-t", "health", "-m", "ping"]
       interval: 5s
-      timeout: 5s
       retries: 3
-
+      
   zigbee2mqtt:
-    image: koenkk/zigbee2mqtt:latest
+    build:
+      context: ./zigbee2mqtt  # this uses your cloned repo as the build source
     container_name: zigbee2mqtt
     restart: unless-stopped
-    ports:
-      - "8080:8080"
     volumes:
       - ./data:/app/data
     devices:
@@ -30,23 +29,36 @@ services:
         condition: service_healthy
     environment:
       - TZ=Europe/Lisbon
+    ports:
+      - "8080:8080"
 
   homeassistant:
-    image: ghcr.io/home-assistant/home-assistant:stable
     container_name: homeassistant
-    network_mode: host  # full discovery support
-    restart: unless-stopped
+    image: ghcr.io/home-assistant/home-assistant:stable
     user: "${UID}:${GID}"
-    environment:
-      - TZ=Europe/Lisbon
     volumes:
       - ./homeassistant:/config
       - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TZ=Europe/Lisbon
+    restart: unless-stopped
+    network_mode: host  # recommended for full discovery support
     depends_on:
       mqtt:
         condition: service_healthy
 
-
-      #build:
-      #context: ./zigbee2mqtt
-      #dockerfile: docker/Dockerfile
+  ##tailscale:
+  ##  build:
+  ##    context: ./tailscale
+  ##  container_name: tailscale
+  ##  cap_add:
+  ##    - NET_ADMIN
+  ##    - SYS_MODULE
+  ##  environment:
+  ##    - TS_AUTHKEY=${TS_AUTHKEY}
+  ##  volumes:
+  ##    - ./tailscale/state:/var/lib/tailscale
+  ##    - /dev/net/tun:/dev/net/tun
+  ##  network_mode: "host"
+  ##  restart: unless-stopped
+  ##  privileged: true

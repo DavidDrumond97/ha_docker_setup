@@ -1,0 +1,57 @@
+console.log(">>>>> Custom converter loaded");
+
+const tuya = require('zigbee-herdsman-converters/lib/tuya');
+const fz = require('zigbee-herdsman-converters/converters/fromZigbee');
+const tz = require('zigbee-herdsman-converters/converters/toZigbee');
+const exposes = require('zigbee-herdsman-converters/lib/exposes');
+const e = exposes.presets;
+
+//const fromZigbeeMcuSyncTime = {
+//    cluster: 'manuSpecificTuya',
+//    type: ['commandMcuSyncTime'],
+//    convert: (model, msg, publish, options, meta) => {
+//        meta.logger.info(`Received mcuSyncTime request from ${msg.device.ieeeAddr}, payload: ${JSON.stringify(msg.data)}`);
+//        return {mcuSyncTimeRequested: true};
+//    },
+//};
+
+//module.exports = [
+//    {
+//        fingerprint: [{modelID: 'TS0601', manufacturerName: '_TZE284_vmcgja59'}],
+//        model: 'TS0601_vmcgja59',
+//        vendor: 'TuYa',
+//        description: 'Custom TS0601 device (_TZE284_vmcgja59)',
+//        fromZigbee: [fromZigbeeMcuSyncTime],
+//        toZigbee: [],
+//        exposes: [e.binary('mcuSyncTimeRequested', 'ON', 'OFF').withDescription('Indicates the device requested time sync')],
+//        configure: async (device, coordinatorEndpoint, logger) => {
+//            await tuya.configure(device, coordinatorEndpoint, logger);
+//        },
+//    },
+//];
+
+
+module.exports = [
+  {
+    fingerprint: [{modelID: 'TS0601', manufacturerName: '_TZE284_vmcgja59'}],
+    model: 'TS0601_8gang_switch',
+    vendor: 'TuYa',
+    description: '8 gang smart switch',
+    fromZigbee: [tuya.fz.datapoints],
+    toZigbee: [tuya.tz.datapoints],
+    configure: tuya.configureMagicPacket,
+    exposes: [
+      e.switch().withEndpoint('l1'),
+    ],
+    endpoint: (device) => {
+      return {
+        l1: 1,
+      };
+    },
+    meta: {
+      tuyaDatapoints: [
+        [111, 'l1', tuya.valueConverter.onOff],
+      ],
+    },
+  },
+];
