@@ -1,0 +1,69 @@
+console.log(">>>>> Custom Tuya TS0601 24-gang converter loaded");
+
+const tuya = require('zigbee-herdsman-converters/lib/tuya');
+const exposes = require('zigbee-herdsman-converters/lib/exposes');
+const m = require('zigbee-herdsman-converters/lib/modernExtend');
+const { switch: eSwitch } = exposes.presets;
+
+module.exports = {
+  fingerprint: tuya.fingerprint('TS0601', ['_TZE284_vmcgja59']),
+  model: 'TS0601_vmcgja59_24gang',
+  vendor: 'Tuya',
+  description: 'Custom 24-gang Tuya switch',
+
+  fromZigbee: [tuya.fz.datapoints],
+  toZigbee: [tuya.tz.datapoints],
+  onEvent: tuya.onEventSetTime,
+
+  meta: {
+    multiEndpoint: true,
+    tuyaDatapoints: [
+      [1, 'state', tuya.valueConverter.trueFalse0],
+      [2, 'state', tuya.valueConverter.trueFalse0],
+      [3, 'state', tuya.valueConverter.trueFalse0],
+      [4, 'state', tuya.valueConverter.trueFalse0],
+      [5, 'state', tuya.valueConverter.trueFalse0],
+      [6, 'state', tuya.valueConverter.trueFalse0],
+      [101, 'state', tuya.valueConverter.trueFalse0],
+      [102, 'state', tuya.valueConverter.trueFalse0],
+      [103, 'state', tuya.valueConverter.trueFalse0],
+      [104, 'state', tuya.valueConverter.trueFalse0],
+      [105, 'state', tuya.valueConverter.trueFalse0],
+      [106, 'state', tuya.valueConverter.trueFalse0],
+      [107, 'state', tuya.valueConverter.trueFalse0],
+      [108, 'state', tuya.valueConverter.trueFalse0],
+      [109, 'state', tuya.valueConverter.trueFalse0],
+      [110, 'state', tuya.valueConverter.trueFalse0],
+      [111, 'state', tuya.valueConverter.trueFalse0],
+      [112, 'state', tuya.valueConverter.trueFalse0],
+      [113, 'state', tuya.valueConverter.trueFalse0],
+      [114, 'state', tuya.valueConverter.trueFalse0],
+      [115, 'state', tuya.valueConverter.trueFalse0],
+      [116, 'state', tuya.valueConverter.trueFalse0],
+      [117, 'state', tuya.valueConverter.trueFalse0],
+      [118, 'state', tuya.valueConverter.trueFalse0],
+    ],
+  },
+
+  // Use deviceEndpoints and onOff together, like your TS0004
+  extend: [
+    m.deviceEndpoints({
+      endpoints: Object.fromEntries(
+        Array.from({ length: 24 }, (_, i) => [`l${i + 1}`, i + 1])
+      ),
+    }),
+    m.onOff({
+      endpointNames: Array.from({ length: 24 }, (_, i) => `l${i + 1}`),
+    }),
+  ],
+
+  exposes: Array.from({ length: 24 }, (_, i) =>
+    eSwitch().withEndpoint(`l${i + 1}`)
+  ),
+
+  endpoint: device => {
+    const map = {};
+    for (let i = 1; i <= 24; i++) map[`l${i}`] = i;
+    return map;
+  },
+};

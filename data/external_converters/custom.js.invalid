@@ -1,0 +1,68 @@
+console.log(">>>>> Custom Tuya TS0601 24-gang converter loaded");
+
+const tuya = require('zigbee-herdsman-converters/lib/tuya');
+const exposes = require('zigbee-herdsman-converters/lib/exposes');
+const m = require('zigbee-herdsman-converters/lib/modernExtend');
+const { switch: eSwitch } = exposes.presets;
+
+module.exports = {
+  fingerprint: tuya.fingerprint('TS0601', ['_TZE284_vmcgja59']),
+  model: 'TS0601_vmcgja59_24gang',
+  vendor: 'Tuya',
+  description: 'Custom 24-gang Tuya switch',
+
+  fromZigbee: [tuya.fz.datapoints],
+  toZigbee: [tuya.tz.datapoints],
+  onEvent: tuya.onEventSetTime,
+
+  meta: {
+    multiEndpoint: true,
+    tuyaDatapoints: {
+      1:   { name: 'state_l1',  value: tuya.valueConverter.trueFalse0 },
+      2:   { name: 'state_l2',  value: tuya.valueConverter.trueFalse0 },
+      3:   { name: 'state_l3',  value: tuya.valueConverter.trueFalse0 },
+      4:   { name: 'state_l4',  value: tuya.valueConverter.trueFalse0 },
+      5:   { name: 'state_l5',  value: tuya.valueConverter.trueFalse0 },
+      6:   { name: 'state_l6',  value: tuya.valueConverter.trueFalse0 },
+      101: { name: 'state_l7',  value: tuya.valueConverter.trueFalse0 },
+      102: { name: 'state_l8',  value: tuya.valueConverter.trueFalse0 },
+      103: { name: 'state_l9',  value: tuya.valueConverter.trueFalse0 },
+      104: { name: 'state_l10', value: tuya.valueConverter.trueFalse0 },
+      105: { name: 'state_l11', value: tuya.valueConverter.trueFalse0 },
+      106: { name: 'state_l12', value: tuya.valueConverter.trueFalse0 },
+      107: { name: 'state_l13', value: tuya.valueConverter.trueFalse0 },
+      108: { name: 'state_l14', value: tuya.valueConverter.trueFalse0 },
+      109: { name: 'state_l15', value: tuya.valueConverter.trueFalse0 },
+      110: { name: 'state_l16', value: tuya.valueConverter.trueFalse0 },
+      111: { name: 'state_l17', value: tuya.valueConverter.trueFalse0 },
+      112: { name: 'state_l18', value: tuya.valueConverter.trueFalse0 },
+      113: { name: 'state_l19', value: tuya.valueConverter.trueFalse0 },
+      114: { name: 'state_l20', value: tuya.valueConverter.trueFalse0 },
+      115: { name: 'state_l21', value: tuya.valueConverter.trueFalse0 },
+      116: { name: 'state_l22', value: tuya.valueConverter.trueFalse0 },
+      117: { name: 'state_l23', value: tuya.valueConverter.trueFalse0 },
+      118: { name: 'state_l24', value: tuya.valueConverter.trueFalse0 },
+    },
+  },
+
+  extend: [
+    m.deviceEndpoints({
+      endpoints: Object.fromEntries(
+        Array.from({ length: 24 }, (_, i) => [`l${i + 1}`, i + 1])
+      ),
+    }),
+    m.onOff({
+      endpointNames: Array.from({ length: 24 }, (_, i) => `l${i + 1}`),
+    }),
+  ],
+
+  exposes: Array.from({ length: 24 }, (_, i) =>
+    eSwitch().withEndpoint(`l${i + 1}`)
+  ),
+
+  endpoint: device => {
+    const map = {};
+    for (let i = 1; i <= 24; i++) map[`l${i}`] = i;
+    return map;
+  },
+};

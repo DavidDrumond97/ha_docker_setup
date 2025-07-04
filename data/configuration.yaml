@@ -1,31 +1,25 @@
 homeassistant:
   enabled: true
-
 mqtt:
   base_topic: zigbee2mqtt
   server: mqtt://mqtt:1883
-
 serial:
   port: /dev/ttyUSB0
   adapter: ezsp
-
 frontend:
   enabled: true
   port: 8080
   host: 0.0.0.0
-
 version: 4
-
 devices:
   '0xa4c1380992beb6e3':
     friendly_name: Jardim Frontal
     icon: device_icons/ca7c84cdf297aaf8066adb7bd52b403d.png
   '0xa4c1385a161b4255':
     friendly_name: '0xa4c1385a161b4255'
-
+    state_action: true
 advanced:
   log_level: debug
   transmit_power: 20
-
 external_converters:
-  - external_converters/custom.js  # 🔄 correct relative path to match your folder name
+  - external_converters/custom.js
