@@ -1,0 +1,54 @@
+console.log(">>>>> Custom Tuya TS0601 converter loaded");
+
+const fz = require('zigbee-herdsman-converters/converters/fromZigbee');
+const tz = require('zigbee-herdsman-converters/converters/toZigbee');
+const exposes = require('zigbee-herdsman-converters/lib/exposes');
+const tuya = require('zigbee-herdsman-converters/lib/tuya');
+const reporting = require('zigbee-herdsman-converters/lib/reporting');
+const e = exposes.presets;
+
+const definition = {
+    fingerprint: [{ modelID: 'TS0601', manufacturerName: '_TZE284_vmcgja59' }],
+    model: 'TS0601_vmcgja59',
+    vendor: 'Tuya',
+    description: 'Custom 24-gang Tuya switch',
+    fromZigbee: [tuya.fz.datapoints],
+    toZigbee: [tuya.tz.datapoints],
+    configure: tuya.configureMagicPacket,
+    exposes: [],
+    meta: {
+        // All datapoints go in here
+        tuyaDatapoints: [
+
+            [1,   'relay_01',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [2,   'relay_02',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [3,   'relay_03',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [4,   'relay_04',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [5,   'relay_05',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [6,   'relay_06',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [101, 'relay_07',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [102, 'relay_08',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [103, 'relay_09',   tuya.valueConverter.onOff], // <- mapped the datapoint
+            [104, 'relay_10',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [105, 'relay_11',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [106, 'relay_12',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [107, 'relay_13',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [108, 'relay_14',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [109, 'relay_15',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [110, 'relay_16',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [111, 'relay_17',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [112, 'relay_18',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [113, 'relay_19',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [114, 'relay_20',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [115, 'relay_21',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [116, 'relay_22',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [117, 'relay_23',  tuya.valueConverter.onOff], // <- mapped the datapoint
+            [118, 'relay_24',  tuya.valueConverter.onOff], // <- mapped the datapoint
+        ],
+    },
+    extend: [
+        // A preferred new way of extending functionality.
+    ],
+};
+
+module.exports = definition;

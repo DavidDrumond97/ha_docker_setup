@@ -1,56 +1,101 @@
-console.log(">>>>> Custom Tuya TS0601 converter loaded");
+console.log(">>>>> Custom Tuya TS0601 24-gang converter loaded");
 
-const fz = require('zigbee-herdsman-converters/converters/fromZigbee');
-const tz = require('zigbee-herdsman-converters/converters/toZigbee');
-const exposes = require('zigbee-herdsman-converters/lib/exposes');
 const tuya = require('zigbee-herdsman-converters/lib/tuya');
-const reporting = require('zigbee-herdsman-converters/lib/reporting');
+const exposes = require('zigbee-herdsman-converters/lib/exposes');
 const e = exposes.presets;
 
-const definition = {
+module.exports = {
     fingerprint: [{ modelID: 'TS0601', manufacturerName: '_TZE284_vmcgja59' }],
-    model: 'TS0601_vmcgja59',
+    model: 'TS0601_24gang_custom',
     vendor: 'Tuya',
-    description: 'Custom 4-gang Tuya switch',
+    description: 'Custom 24-gang Tuya switch',
+
     fromZigbee: [tuya.fz.datapoints],
     toZigbee: [tuya.tz.datapoints],
+    onEvent: tuya.onEventSetTime,
     configure: tuya.configureMagicPacket,
-    exposes: [
-        // Here you should put all functionality that your device exposes
-    ],
-    meta: {
-        // All datapoints go in here
-        tuyaDatapoints: [
 
-            [1,   'relay_1',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [2,   'relay_2',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [3,   'relay_3',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [4,   'relay_4',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [5,   'relay_5',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [6,   'relay_6',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [101, 'relay_7',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [102, 'relay_8',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [103, 'relay_9',   tuya.valueConverter.onOff], // <- mapped the datapoint
-            [104, 'relay_10',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [105, 'relay_11',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [106, 'relay_12',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [107, 'relay_13',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [108, 'relay_14',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [109, 'relay_15',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [110, 'relay_16',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [111, 'relay_17',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [112, 'relay_18',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [113, 'relay_19',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [114, 'relay_20',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [115, 'relay_21',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [116, 'relay_22',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [117, 'relay_23',  tuya.valueConverter.onOff], // <- mapped the datapoint
-            [118, 'relay_24',  tuya.valueConverter.onOff], // <- mapped the datapoint
+    exposes: [
+        e.switch().withEndpoint('l01'),
+        e.switch().withEndpoint('l02'),
+        e.switch().withEndpoint('l03'),
+        e.switch().withEndpoint('l04'),
+        e.switch().withEndpoint('l05'),
+        e.switch().withEndpoint('l06'),
+        e.switch().withEndpoint('l07'),
+        e.switch().withEndpoint('l08'),
+        e.switch().withEndpoint('l09'),
+        e.switch().withEndpoint('l10'),
+        e.switch().withEndpoint('l11'),
+        e.switch().withEndpoint('l12'),
+        e.switch().withEndpoint('l13'),
+        e.switch().withEndpoint('l14'),
+        e.switch().withEndpoint('l15'),
+        e.switch().withEndpoint('l16'),
+        e.switch().withEndpoint('l17'),
+        e.switch().withEndpoint('l18'),
+        e.switch().withEndpoint('l19'),
+        e.switch().withEndpoint('l20'),
+        e.switch().withEndpoint('l21'),
+        e.switch().withEndpoint('l22'),
+        e.switch().withEndpoint('l23'),
+        e.switch().withEndpoint('l24'),
+    ],
+
+    meta: {
+        multiEndpoint: true,
+        tuyaDatapoints: [
+            [1,   'state_l01', tuya.valueConverter.onOff],
+            [2,   'state_l02', tuya.valueConverter.onOff],
+            [3,   'state_l03', tuya.valueConverter.onOff],
+            [4,   'state_l04', tuya.valueConverter.onOff],
+            [5,   'state_l05', tuya.valueConverter.onOff],
+            [6,   'state_l06', tuya.valueConverter.onOff],
+            [101, 'state_l07', tuya.valueConverter.onOff],
+            [102, 'state_l08', tuya.valueConverter.onOff],
+            [103, 'state_l09', tuya.valueConverter.onOff],
+            [104, 'state_l10', tuya.valueConverter.onOff],
+            [105, 'state_l11', tuya.valueConverter.onOff],
+            [106, 'state_l12', tuya.valueConverter.onOff],
+            [107, 'state_l13', tuya.valueConverter.onOff],
+            [108, 'state_l14', tuya.valueConverter.onOff],
+            [109, 'state_l15', tuya.valueConverter.onOff],
+            [110, 'state_l16', tuya.valueConverter.onOff],
+            [111, 'state_l17', tuya.valueConverter.onOff],
+            [112, 'state_l18', tuya.valueConverter.onOff],
+            [113, 'state_l19', tuya.valueConverter.onOff],
+            [114, 'state_l20', tuya.valueConverter.onOff],
+            [115, 'state_l21', tuya.valueConverter.onOff],
+            [116, 'state_l22', tuya.valueConverter.onOff],
+            [117, 'state_l23', tuya.valueConverter.onOff],
+            [118, 'state_l24', tuya.valueConverter.onOff],
         ],
     },
-    extend: [
-        // A preferred new way of extending functionality.
-    ],
-};
 
-module.exports = definition;
+    endpoint: (device) => ({
+        l01: 1,
+        l02: 1,
+        l03: 1,
+        l04: 1,
+        l05: 1,
+        l06: 1,
+        l07: 1,
+        l08: 1,
+        l09: 1,
+        l10: 1,
+        l11: 1,
+        l12: 1,
+        l13: 1,
+        l14: 1,
+        l15: 1,
+        l16: 1,
+        l17: 1,
+        l18: 1,
+        l19: 1,
+        l20: 1,
+        l21: 1,
+        l22: 1,
+        l23: 1,
+        l24: 1,
+    }),
+};

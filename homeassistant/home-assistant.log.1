@@ -1,2 +1,20 @@
-2025-07-04 22:45:40.696 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2025-07-04 22:45:40.697 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration scheduler which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-12 20:21:02.015 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-12 20:21:02.016 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration scheduler which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-12 20:21:04.650 WARNING (MainThread) [custom_components.hacs] <HacsData async_restore_repository> duplicate IDs The repo id for rsnodgrass/hass-adtpulse is already set to 149443194
+2025-07-12 20:21:04.661 WARNING (MainThread) [custom_components.hacs] <HacsData async_restore_repository> duplicate IDs The repo id for rsnodgrass/hass-sensorpush is already set to 205416078
+2025-07-12 20:21:05.844 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/config/custom_components/hacs/base.py", line 667, in startup_tasks
+    await self.async_get_all_category_repositories()
+  File "/config/custom_components/hacs/base.py", line 832, in async_get_all_category_repositories
+    await asyncio.gather(
+    ...<4 lines>...
+    )
+  File "/config/custom_components/hacs/base.py", line 862, in async_get_category_repositories_experimental
+    self.repositories.set_repository_id(repository, repo_id)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/hacs/base.py", line 290, in set_repository_id
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: The repo id for rsnodgrass/hass-adtpulse is already set to 149443194

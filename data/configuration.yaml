@@ -15,9 +15,17 @@ devices:
   '0xa4c1380992beb6e3':
     friendly_name: Jardim Frontal
     icon: device_icons/ca7c84cdf297aaf8066adb7bd52b403d.png
+  '0xa4c138220485b9b7':
+    friendly_name: Casa das Maquinas
+  '0xa4c138b7398f48b1':
+    friendly_name: TempHumidityDavid
+  '0xa4c138cca829deb9':
+    friendly_name: TempHumidityGloria
+    temperature_calibration: ''
+  '0xa4c138de61823b4b':
+    friendly_name: '0xa4c138de61823b4b'
   '0xa4c1385a161b4255':
     friendly_name: '0xa4c1385a161b4255'
-    state_action: true
 advanced:
   log_level: debug
   transmit_power: 20
