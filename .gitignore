@@ -41,3 +41,7 @@ tailscale/state/
 Logs/
 System/
 .env
+mosquitto/data/
+mosquitto/log/
+**/mosquitto.db
+**/*.log

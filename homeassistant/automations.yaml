@@ -18,7 +18,7 @@
     domain: switch
   mode: single
 - id: '1750515600408'
-  alias: Rega Frontal
+  alias: Rega Frontal Z1
   description: ''
   triggers:
   - type: turned_on
@@ -35,10 +35,993 @@
   - delay:
       hours: 0
       minutes: 2
-      seconds: 10
+      seconds: 30
       milliseconds: 0
   - type: turn_off
     device_id: f610843d38b6e58c77ad91f1878a95e1
     entity_id: f3d558b106ebdef4e210906b96137728
+    domain: switch
+  mode: single
+- id: '1752780422039'
+  alias: relay1
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - switch.24vrelay_l01
+    - switch.24vrelay_l02
+    - switch.24vrelay_l03
+    - switch.24vrelay_l04
+    - switch.24vrelay_l05
+    - switch.24vrelay_l06
+    - switch.24vrelay_l07
+    - switch.24vrelay_l08
+    - switch.24vrelay_l09
+    - switch.24vrelay_l10
+    - switch.24vrelay_l11
+    - switch.24vrelay_l12
+    - switch.24vrelay_l13
+    - switch.24vrelay_l14
+    - switch.24vrelay_l15
+    - switch.24vrelay_l16
+    - switch.24vrelay_l17
+    - switch.24vrelay_l18
+    - switch.24vrelay_l19
+    - switch.24vrelay_l20
+    - switch.24vrelay_l21
+    - switch.24vrelay_l22
+    - switch.24vrelay_l23
+    - switch.24vrelay_l24
+    from: 'off'
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+    enabled: false
+  - trigger: time_pattern
+    minutes: /2
+  conditions: []
+  actions:
+  - sequence:
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 6426acad5dc0e0c05a9995f7cc17b0f8
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 1b6977d6ede55c96bede2cb8234e0aae
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 5a474bdd63b4bf4f1a91c4ba5d841c8e
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 9f704b835040791a391efc2c51da9953
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: fa3bd24c6a8dc6f6f91f372dbdd07259
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 4db92dd3de507385643221bcaec13162
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 9a5a37324b024e367bc2c5371e03d89e
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 4d337593ff4a9ce590f50e6e09d3818a
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 71225e41c32fd47bb4e0d519c0dd970a
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 76fcdaca6f7f2c4b26041658281326e2
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: da3b954c5d3a229eee13b85d309236e5
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 90be86cd26269e118aecccff44ced322
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 0743adcde4f35f8beeda59ffc17b7259
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 4d67572acf63abecb926d9d2fa21742a
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 6cead008d11ef5efcc11fbbb91056fd2
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 4f68b8947e2d3c27fd0dceee11c5a6fd
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 136504318751394cb0e4c7f1d62dee9e
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 6b3e0a4230f635d769a0a837084e0784
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 2060bf501f2d30fbb25e113597ff7e89
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 364597ce1e3b5a2ed745c2b6351e3583
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: e6298448be42ce21e95403e59b577780
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 8b1aeefee68eaeb020684a4e66e3f156
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 7bc1a41de5bd5accedfeb16f358cbf72
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 0
+        milliseconds: 500
+    - type: turn_off
+      device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+      entity_id: 103ef8383c2369c35c1e5e5c82211e7f
+      domain: switch
+  mode: single
+- id: '1752871229628'
+  alias: Rega Frontal Z2
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: f610843d38b6e58c77ad91f1878a95e1
+    entity_id: 0cce61976f6d097034ce7ca4dc14942c
+    domain: switch
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: f610843d38b6e58c77ad91f1878a95e1
+    entity_id: 0cce61976f6d097034ce7ca4dc14942c
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: f610843d38b6e58c77ad91f1878a95e1
+    entity_id: 0cce61976f6d097034ce7ca4dc14942c
+    domain: switch
+  mode: single
+- id: '1752871634869'
+  alias: RegaQuintalZ1
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: b4291f9f320887cc2a3f568dc7d2d9c6
+    entity_id: fd2c190632c55dd7e76d0fc9538be54f
+    domain: switch
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: b4291f9f320887cc2a3f568dc7d2d9c6
+    entity_id: fd2c190632c55dd7e76d0fc9538be54f
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: b4291f9f320887cc2a3f568dc7d2d9c6
+    entity_id: fd2c190632c55dd7e76d0fc9538be54f
+    domain: switch
+  mode: single
+- id: '1752872211048'
+  alias: RegaQuintalZ2
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: b4291f9f320887cc2a3f568dc7d2d9c6
+    entity_id: a79f464387ff837d6b4d0d7113d3b3d1
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: b4291f9f320887cc2a3f568dc7d2d9c6
+    entity_id: a79f464387ff837d6b4d0d7113d3b3d1
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: b4291f9f320887cc2a3f568dc7d2d9c6
+    entity_id: a79f464387ff837d6b4d0d7113d3b3d1
+    domain: switch
+  mode: single
+- id: '1758968812951'
+  alias: Estor stop 09/10
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 71225e41c32fd47bb4e0d519c0dd970a
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 76fcdaca6f7f2c4b26041658281326e2
+    domain: switch
+  mode: single
+- id: '1758969847900'
+  alias: Estor stop 11/12
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: da3b954c5d3a229eee13b85d309236e5
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 90be86cd26269e118aecccff44ced322
+    domain: switch
+  mode: single
+- id: '1758969931848'
+  alias: Estor stop 13/14
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 0743adcde4f35f8beeda59ffc17b7259
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4d67572acf63abecb926d9d2fa21742a
+    domain: switch
+  mode: single
+- id: '1758970007276'
+  alias: Estor stop 15/16
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6cead008d11ef5efcc11fbbb91056fd2
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4f68b8947e2d3c27fd0dceee11c5a6fd
+    domain: switch
+  mode: single
+- id: '1758970080269'
+  alias: Estor stop 17/18
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 136504318751394cb0e4c7f1d62dee9e
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6b3e0a4230f635d769a0a837084e0784
+    domain: switch
+  mode: single
+- id: '1758970334877'
+  alias: Estor stop 19/20
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 2060bf501f2d30fbb25e113597ff7e89
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 364597ce1e3b5a2ed745c2b6351e3583
+    domain: switch
+  mode: single
+- id: '1758970432733'
+  alias: Estor stop 21/22
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: e6298448be42ce21e95403e59b577780
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 8b1aeefee68eaeb020684a4e66e3f156
+    domain: switch
+  mode: single
+- id: '1758970525740'
+  alias: Estor stop 01/02
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6426acad5dc0e0c05a9995f7cc17b0f8
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 1b6977d6ede55c96bede2cb8234e0aae
+    domain: switch
+  mode: single
+- id: '1758970604689'
+  alias: Estor stop 03/04
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 5a474bdd63b4bf4f1a91c4ba5d841c8e
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 9f704b835040791a391efc2c51da9953
+    domain: switch
+  mode: single
+- id: '1758970689573'
+  alias: Estor stop 05/06
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: fa3bd24c6a8dc6f6f91f372dbdd07259
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4db92dd3de507385643221bcaec13162
+    domain: switch
+  mode: single
+- id: '1758970772717'
+  alias: Estor stop 07/08
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id: []
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 9a5a37324b024e367bc2c5371e03d89e
+    domain: switch
+  - type: turn_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4d337593ff4a9ce590f50e6e09d3818a
+    domain: switch
+  mode: single
+- id: '1758981817599'
+  alias: Estor 01 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6426acad5dc0e0c05a9995f7cc17b0f8
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6426acad5dc0e0c05a9995f7cc17b0f8
+    domain: switch
+  mode: single
+- id: '1758981929134'
+  alias: Estor 02 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 1b6977d6ede55c96bede2cb8234e0aae
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 1b6977d6ede55c96bede2cb8234e0aae
+    domain: switch
+  mode: single
+- id: '1758981989162'
+  alias: Estor 03 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 5a474bdd63b4bf4f1a91c4ba5d841c8e
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 5a474bdd63b4bf4f1a91c4ba5d841c8e
+    domain: switch
+  mode: single
+- id: '1758982133826'
+  alias: Estor 04 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 9f704b835040791a391efc2c51da9953
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 9f704b835040791a391efc2c51da9953
+    domain: switch
+  mode: single
+- id: '1758982207512'
+  alias: Estor 05 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: fa3bd24c6a8dc6f6f91f372dbdd07259
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: fa3bd24c6a8dc6f6f91f372dbdd07259
+    domain: switch
+  mode: single
+- id: '1758982255740'
+  alias: Estor 06 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4db92dd3de507385643221bcaec13162
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4db92dd3de507385643221bcaec13162
+    domain: switch
+  mode: single
+- id: '1758982300428'
+  alias: Estor 07 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 9a5a37324b024e367bc2c5371e03d89e
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 9a5a37324b024e367bc2c5371e03d89e
+    domain: switch
+  mode: single
+- id: '1758982349604'
+  alias: Estor 08 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4d337593ff4a9ce590f50e6e09d3818a
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4d337593ff4a9ce590f50e6e09d3818a
+    domain: switch
+  mode: single
+- id: '1758982419842'
+  alias: Estor 09 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 71225e41c32fd47bb4e0d519c0dd970a
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 71225e41c32fd47bb4e0d519c0dd970a
+    domain: switch
+  mode: single
+- id: '1758982475220'
+  alias: Estor 10 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 76fcdaca6f7f2c4b26041658281326e2
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 76fcdaca6f7f2c4b26041658281326e2
+    domain: switch
+  mode: single
+- id: '1758982523233'
+  alias: Estor 11 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: da3b954c5d3a229eee13b85d309236e5
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: da3b954c5d3a229eee13b85d309236e5
+    domain: switch
+  mode: single
+- id: '1758982563209'
+  alias: Estor 12 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 90be86cd26269e118aecccff44ced322
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 90be86cd26269e118aecccff44ced322
+    domain: switch
+  mode: single
+- id: '1758982614896'
+  alias: Estor 13 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 0743adcde4f35f8beeda59ffc17b7259
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 0743adcde4f35f8beeda59ffc17b7259
+    domain: switch
+  mode: single
+- id: '1758982658293'
+  alias: Estor 15 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6cead008d11ef5efcc11fbbb91056fd2
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6cead008d11ef5efcc11fbbb91056fd2
+    domain: switch
+  mode: single
+- id: '1758982796461'
+  alias: Estor 16 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4f68b8947e2d3c27fd0dceee11c5a6fd
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4f68b8947e2d3c27fd0dceee11c5a6fd
+    domain: switch
+  mode: single
+- id: '1758982850406'
+  alias: Estor 17 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 136504318751394cb0e4c7f1d62dee9e
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 136504318751394cb0e4c7f1d62dee9e
+    domain: switch
+  mode: single
+- id: '1758982893989'
+  alias: Estor 18 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6b3e0a4230f635d769a0a837084e0784
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 6b3e0a4230f635d769a0a837084e0784
+    domain: switch
+  mode: single
+- id: '1758983075518'
+  alias: Estor 19 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 2060bf501f2d30fbb25e113597ff7e89
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 2060bf501f2d30fbb25e113597ff7e89
+    domain: switch
+  mode: single
+- id: '1758983123609'
+  alias: Estor 20 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 364597ce1e3b5a2ed745c2b6351e3583
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 364597ce1e3b5a2ed745c2b6351e3583
+    domain: switch
+  mode: single
+- id: '1758983404538'
+  alias: Estor 21 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: e6298448be42ce21e95403e59b577780
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: e6298448be42ce21e95403e59b577780
+    domain: switch
+  mode: single
+- id: '1758983470314'
+  alias: Estor 22 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 8b1aeefee68eaeb020684a4e66e3f156
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 8b1aeefee68eaeb020684a4e66e3f156
+    domain: switch
+  mode: single
+- id: '1758984339688'
+  alias: Estor 14 toggle
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4d67572acf63abecb926d9d2fa21742a
+    domain: switch
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 6be4b425eb9bed40bd93c3659d8c5ccc
+    entity_id: 4d67572acf63abecb926d9d2fa21742a
+    domain: switch
+  mode: single
+- id: '1764119595181'
+  alias: CaldeiraAutomation
+  description: ''
+  triggers:
+  - type: temperature
+    device_id: 46cbaf1e126f6bb15a3d1129afbaf74d
+    entity_id: b93a557c32309043e7dfa92302b5cd5f
+    domain: sensor
+    trigger: device
+    below: 35
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+  conditions:
+  - condition: time
+    before: input_datetime.caldeiradate
+  actions:
+  - type: turn_on
+    device_id: 46cbaf1e126f6bb15a3d1129afbaf74d
+    entity_id: 74f80e5fea7f62ec59c558909c898885
     domain: switch
   mode: single

@@ -23,11 +23,20 @@ devices:
     friendly_name: TempHumidityGloria
     temperature_calibration: ''
   '0xa4c138de61823b4b':
-    friendly_name: '0xa4c138de61823b4b'
+    friendly_name: RegaQuintal
   '0xa4c1385a161b4255':
-    friendly_name: '0xa4c1385a161b4255'
+    friendly_name: 24vRelay
+  '0xa4c138047c9bffff':
+    friendly_name: FonteEscada
+  '0xa4c1389a46226004':
+    friendly_name: '0xa4c1389a46226004'
+  '0xa4c138df33647e53':
+    friendly_name: '0xa4c138df33647e53'
 advanced:
   log_level: debug
   transmit_power: 20
+  availability_blocklist: []
+  availability_passlist: []
+  availability_timeout: 30
 external_converters:
   - external_converters/custom.js

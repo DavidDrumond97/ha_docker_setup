@@ -15,6 +15,8 @@ module.exports = {
     onEvent: tuya.onEventSetTime,
     configure: tuya.configureMagicPacket,
 
+    //this exposes the endpoints on the mqtt dashboard and on the HA dashboard
+    //it also works when we publish "frindly_name/l01/set" ON/OFF
     exposes: [
         e.switch().withEndpoint('l01'),
         e.switch().withEndpoint('l02'),
@@ -44,6 +46,9 @@ module.exports = {
 
     meta: {
         multiEndpoint: true,
+        //tese are the datapoints that we get on the logs
+        //its possible to set the relays publishing on the topic frindly_name/set {"state_l01" : "ON"}
+
         tuyaDatapoints: [
             [1,   'state_l01', tuya.valueConverter.onOff],
             [2,   'state_l02', tuya.valueConverter.onOff],
@@ -72,6 +77,7 @@ module.exports = {
         ],
     },
 
+    //The real zigbee endpoint for the relays is always 1
     endpoint: (device) => ({
         l01: 1,
         l02: 1,
